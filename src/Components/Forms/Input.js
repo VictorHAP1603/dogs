@@ -1,21 +1,21 @@
 import React from "react";
 
-import "../../css/Form/Input.css";
+import styles from './Input.module.css' ;
 
 const Input = ({ label, type, value, onChange, error, onBlur }) => {
   return (
-    <div className="wrapper-input">
-      <label className="label">
+    <div className={styles.wrapperInput}>
+      <label className={styles.label}>
         <p>{label}</p>
         <input
-          className="input"
+          className={styles.input}
           type={type}
           value={value}
           onChange={onChange}
           onBlur={onBlur}
         />
       </label>
-      {error && <p className="error">{error}</p>}
+      {error && <p className={styles.error}>{error}</p>}
     </div>
   );
 };
