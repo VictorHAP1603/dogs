@@ -7,8 +7,13 @@ const validation = {
   },
   password: {
     regex: /^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$/,
-    message: 'A senha deve conter pelo menos 8 caracteres, 1 letra maiúscula, 1 letra minúscula e  1 caracter especial',
-  }
+    message:
+      "A senha deve conter pelo menos 8 caracteres, 1 letra maiúscula, 1 letra minúscula e  1 caracter especial",
+  },
+  number: {
+    regex: /^\d+$/,
+    message: "Utilize numeros apenas",
+  },
 };
 
 const useForm = (type) => {

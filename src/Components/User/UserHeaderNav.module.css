@@ -131,3 +131,9 @@
 .navMobile svg {
   margin-right: 0.5rem;
 }
+
+@media (max-width: 405px) {
+  .navMobile {
+    top: 85px;
+  }
+}
